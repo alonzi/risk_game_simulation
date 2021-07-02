@@ -3,6 +3,7 @@
 # lpa2a@virginia.edu
 
 import numpy as np
+import logging
 
 class Army():
 
@@ -18,11 +19,11 @@ class Army():
             if self.divisions >=4: n = 3
             elif self.divisions >=3: n = 2 
             elif self.divisions >=2: n = 1
-            else: self.__del__()
+            else: logging.critical("rolling attacker dice when battle is over")
         else:
             if self.divisions >=2: n=2
             elif self.divisions >=1: n=1
-            else: self.__del__()
+            else: logging.critical("rolling defender dice when battle is over")
 
         return(np.random.randint(7,size=n))
 

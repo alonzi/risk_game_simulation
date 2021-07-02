@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO) # to see debugging log message
 import army
 MIN_ARMY_SIZE = 5
 MAX_ARMY_SIZE = 50
-PRECISION = 1000 # 1000 takes me about 3 minutes to run
+PRECISION = 10 # 1000 takes me about 3 minutes to run
 
 
 # function to assign casualties in a battle
@@ -32,7 +32,7 @@ def main():
     armySizes = list(range(MIN_ARMY_SIZE,MAX_ARMY_SIZE+1))
     attackerWinPercentages = []
 
-    for armySize in armySizes: # magic numbers
+    for armySize in armySizes:
 
         attackerWins = 0
 
