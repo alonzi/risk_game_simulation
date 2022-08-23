@@ -1,3 +1,5 @@
+# Hoping to learn some new Risk strategies!
+
 # README file for risk game simulation
 You gotta have a readme otherwise people won't know what this does!
 
